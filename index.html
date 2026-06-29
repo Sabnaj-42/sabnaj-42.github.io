@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabnaj Akter — Distributed Systems Engineer &amp; Researcher</title>
+  <meta name="description" content="Sabnaj Akter — Distributed Systems Engineer & Researcher at AppsCode Inc. Work on cloud-storage reliability, Raft-based failover, Kubernetes database operators, and low-resource (Bengali) NLP." />
+  <meta name="author" content="Sabnaj Akter" />
+
+  <!-- Open Graph / link previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sabnaj Akter — Distributed Systems Engineer & Researcher" />
+  <meta property="og:description" content="Cloud-storage reliability, Raft-based failover, Kubernetes database operators, and low-resource NLP. Prospective PhD student (Fall 2027)." />
+  <meta property="og:url" content="https://sabnaj-42.github.io/" />
+  <meta property="og:image" content="https://sabnaj-42.github.io/assets/img/profile.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="canonical" href="https://sabnaj-42.github.io/" />
+
+  <!-- Fonts: Cormorant Garamond (headings) + Inter (body), echoing the resume's Garamond/Charter pairing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">SA<span>.</span></a>
+      <nav class="nav__links" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#research-interests">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Awards</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--small" href="assets/Sabnaj_Akter_CV.pdf" target="_blank" rel="noopener">CV</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 17a5 5 0 100-10 5 5 0 000 10zm0-13a1 1 0 011 1v1a1 1 0 11-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM4 11a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 110-2h1zm17 0a1 1 0 110 2h-1a1 1 0 110-2h1zM5.6 5.6a1 1 0 011.4 0l.7.7A1 1 0 116.3 7.7l-.7-.7a1 1 0 010-1.4zm11 11a1 1 0 011.4 0l.7.7a1 1 0 11-1.4 1.4l-.7-.7a1 1 0 010-1.4zM18.4 5.6a1 1 0 010 1.4l-.7.7a1 1 0 11-1.4-1.4l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 11-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== HERO / ABOUT ===== -->
+    <section class="hero" id="about">
+      <div class="hero__inner reveal">
+        <div class="hero__photo">
+          <img src="assets/img/profile.jpg" alt="Portrait of Sabnaj Akter" id="heroPhoto"
+               onerror="this.style.display='none';document.getElementById('heroMonogram').style.display='flex';" />
+          <div class="hero__monogram" id="heroMonogram" aria-hidden="true">SA</div>
+        </div>
+        <div class="hero__text">
+          <p class="hero__eyebrow">Distributed Systems Engineer &amp; Researcher</p>
+          <h1 class="hero__name">Sabnaj Akter</h1>
+          <p class="hero__lede">
+            I build reliability into cloud-native distributed systems — Raft-based failover,
+            cross-cluster disaster recovery, and Kubernetes database operators at
+            <a href="https://appscode.com" target="_blank" rel="noopener">AppsCode Inc.</a>
+            My research interest sits one layer below: <em>how replication and placement keep
+            cloud data durable and available when multiple failures hit.</em> I also publish on
+            low-resource (Bengali) NLP. Prospective PhD student for Fall&nbsp;2027.
+          </p>
+          <ul class="hero__meta">
+            <li><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" fill="currentColor"/></svg> Dhaka, Bangladesh</li>
+            <li><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3L2 9l10 6 8-4.8V17h2V9L12 3zM6 13.2V17c0 1.66 2.69 3 6 3s6-1.34 6-3v-3.8l-6 3.6-6-3.6z" fill="currentColor"/></svg> B.Sc. CSE, KUET</li>
+          </ul>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="assets/Sabnaj_Akter_CV.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z" fill="currentColor"/></svg>
+              Download CV
+            </a>
+            <a class="btn" href="mailto:sabnajislam786@gmail.com">Email</a>
+            <a class="btn" href="https://github.com/Sabnaj-42" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/sabnaj-akter-a1a571227/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESEARCH INTERESTS ===== -->
+    <section class="section" id="research-interests">
+      <div class="section__inner reveal">
+        <h2 class="section__title"><span class="section__num">01</span> Research Interests</h2>
+        <div class="tags tags--lg">
+          <span class="tag">Distributed Systems</span>
+          <span class="tag">Cloud-Storage Reliability</span>
+          <span class="tag">Multi-Failure Resilience &amp; Replication</span>
+          <span class="tag">Fault-Tolerant Systems</span>
+          <span class="tag">ML-for-Systems (Data-Driven Resource Management)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PUBLICATIONS ===== -->
+    <section class="section section--alt" id="publications">
+      <div class="section__inner reveal">
+        <h2 class="section__title"><span class="section__num">02</span> Publications &amp; Research</h2>
+        <ol class="pub-list">
+          <li class="pub">
+            <h3 class="pub__title">BnLiteBait: An Attention-Based Lightweight Model for Clickbait Detection in Bengali Text</h3>
+            <p class="pub__venue">Preprint · DOI: 10.13140/RG.2.2.31280.21766</p>
+            <p class="pub__desc">
+              A lightweight attention-based model for Bengali clickbait detection using
+              headline–body fusion, improved with ensemble bagging and t-SNE-based feature
+              visualization.
+            </p>
+            <div class="pub__links">
+              <a href="https://www.researchgate.net/publication/400072760_BnLiteBait_An_Attention-Based_Lightweight_Model_for_Clickbait_Detection_in_Bengali_Text" target="_blank" rel="noopener">ResearchGate ↗</a>
+            </div>
+          </li>
+          <li class="pub">
+            <h3 class="pub__title">N-gram-Based Bengali Text Compression</h3>
+            <p class="pub__venue">Conference Paper · Under Review (ACM ICCA 2026)</p>
+            <p class="pub__desc">
+              An N-gram-based Bengali text compression framework using statistical language
+              modeling, with a tokenization and dictionary-generation pipeline and a compression
+              performance evaluation.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section" id="experience">
+      <div class="section__inner reveal">
+        <h2 class="section__title"><span class="section__num">03</span> Experience</h2>
+        <div class="timeline">
+          <article class="tl">
+            <div class="tl__head">
+              <h3 class="tl__role">Software Engineer</h3>
+              <span class="tl__date">2025 — Present</span>
+            </div>
+            <p class="tl__org">AppsCode Inc. · Distributed Systems &amp; Cloud-Native R&amp;D — Dhaka, Bangladesh</p>
+            <ul class="tl__points">
+              <li>Designed and developed cloud-native distributed database infrastructure for Kubernetes-based environments.</li>
+              <li>Researched and built Kubernetes database operators for IBM Db2 and DocumentDB.</li>
+              <li>Implemented Raft-based failover and disaster-recovery mechanisms with low RPO/RTO guarantees and strong data durability.</li>
+              <li>Built distributed orchestration for automated database lifecycle management.</li>
+              <li>Built observability pipelines using Prometheus exporters, PromQL, and Grafana dashboards.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section section--alt" id="projects">
+      <div class="section__inner reveal">
+        <h2 class="section__title"><span class="section__num">04</span> Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__title">KubeDB: IBM Db2 Operator</h3>
+              <div class="card__links">
+                <a href="https://github.com/kubedb/apimachinery" target="_blank" rel="noopener" aria-label="GitHub repository" title="Code">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z" fill="currentColor"/></svg>
+                </a>
+                <a href="https://kubedb.com/kubernetes/databases/run-and-manage-db2-on-kubernetes/" target="_blank" rel="noopener" aria-label="Documentation" title="Docs">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 2c.9 0 2.3 1.9 2.8 5H9.2C9.7 5.9 11.1 4 12 4zM7.2 9h9.6c.13.96.2 1.97.2 3s-.07 2.04-.2 3H7.2A18 18 0 017 12c0-1.03.07-2.04.2-3zM12 20c-.9 0-2.3-1.9-2.8-5h5.6c-.5 3.1-1.9 5-2.8 5z" fill="currentColor"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="card__desc">
+              A Kubernetes operator managing IBM Db2 workloads in cloud-native environments.
+              Consensus-based failover and replication-aware recovery for high availability and
+              durability under failure; a TCP-based control plane for cross-cluster disaster
+              recovery; and automated E2E + chaos/fault-injection tests validating recovery-latency
+              guarantees across 1000+ workloads and multi-failure scenarios.
+            </p>
+            <div class="tags">
+              <span class="tag">Go</span><span class="tag">Kubernetes</span><span class="tag">TCP</span>
+              <span class="tag">Controller Runtime</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__title">KubeDB: DocumentDB Operator</h3>
+              <div class="card__links">
+                <a href="https://github.com/kubedb/apimachinery" target="_blank" rel="noopener" aria-label="GitHub repository" title="Code">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z" fill="currentColor"/></svg>
+                </a>
+                <a href="https://kubedb.com/kubernetes/databases/run-and-manage-documentdb-on-kubernetes/" target="_blank" rel="noopener" aria-label="Documentation" title="Docs">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 2c.9 0 2.3 1.9 2.8 5H9.2C9.7 5.9 11.1 4 12 4zM7.2 9h9.6c.13.96.2 1.97.2 3s-.07 2.04-.2 3H7.2A18 18 0 017 12c0-1.03.07-2.04.2-3zM12 20c-.9 0-2.3-1.9-2.8-5h5.6c-.5 3.1-1.9 5-2.8 5z" fill="currentColor"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="card__desc">
+              Distributed database orchestration for DocumentDB clusters on Kubernetes. Raft-based
+              consensus and leader election for high availability and fault tolerance; gRPC-based
+              internal services for cluster coordination; automated provisioning and failover
+              orchestration; and measured failover recovery latency and durability boundaries under
+              large-scale fault injection.
+            </p>
+            <div class="tags">
+              <span class="tag">Go</span><span class="tag">Kubernetes</span><span class="tag">Raft</span>
+              <span class="tag">gRPC</span><span class="tag">Distributed Systems</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__title">BookServer — RESTful API</h3>
+              <div class="card__links">
+                <a href="https://github.com/Sabnaj-42/BookServer-API" target="_blank" rel="noopener" aria-label="GitHub repository" title="Code">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z" fill="currentColor"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="card__desc">
+              RESTful APIs in Go and Docker with a modular backend architecture designed for
+              scalable services.
+            </p>
+            <div class="tags">
+              <span class="tag">Go</span><span class="tag">Docker</span><span class="tag">Backend Systems</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="section__inner reveal">
+        <h2 class="section__title"><span class="section__num">05</span> Technical Skills</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Systems &amp; Cloud Infrastructure</h3>
+            <div class="tags"><span class="tag">Kubernetes</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Operators</span><span class="tag">CRDs</span><span class="tag">Raft</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Networking, Backend &amp; Observability</h3>
+            <div class="tags"><span class="tag">TCP</span><span class="tag">HTTP</span><span class="tag">gRPC</span><span class="tag">REST</span><span class="tag">TLS / mTLS</span><span class="tag">Prometheus</span><span class="tag">PromQL</span><span class="tag">Grafana</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Databases</h3>
+            <div class="tags"><span class="tag">IBM Db2</span><span class="tag">PostgreSQL</span><span class="tag">DocumentDB</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <div class="tags"><span class="tag">Go</span><span class="tag">Python</span><span class="tag">C / C++</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">Bash</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Machine Learning &amp; Data</h3>
+            <div class="tags"><span class="tag">Attention Models</span><span class="tag">Statistical LM (N-gram)</span><span class="tag">Ensemble (Bagging)</span><span class="tag">t-SNE</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">LaTeX</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section class="section section--alt" id="achievements">
+      <div class="section__inner reveal">
+        <h2 class="section__title"><span class="section__num">06</span> Achievements &amp; Leadership</h2>
+        <div class="awards">
+          <div class="award">
+            <h3 class="award__title">Competitive Programming</h3>
+            <ul class="award__list">
+              <li><strong>Codeforces — Expert</strong> (max 1602) · <a href="https://codeforces.com/profile/Sabnaj_423" target="_blank" rel="noopener">Sabnaj_423 ↗</a></li>
+              <li><strong>CodeChef — 5-Star</strong> (max 2022) · <a href="https://www.codechef.com/users/Sabnaj42" target="_blank" rel="noopener">Sabnaj42 ↗</a></li>
+            </ul>
+          </div>
+          <div class="award">
+            <h3 class="award__title">Contest Rankings</h3>
+            <ul class="award__list">
+              <li>Intra KUET Programming Contest 2023 — <strong>2nd</strong></li>
+              <li>National Girls' Programming Contest 2022 — <strong>8th</strong></li>
+              <li>Ada Lovelace NGPC 2022 — <strong>10th</strong></li>
+              <li>IUT IUPC 2024 — <strong>36th</strong></li>
+            </ul>
+          </div>
+          <div class="award">
+            <h3 class="award__title">Leadership</h3>
+            <ul class="award__list">
+              <li><strong>Vice President</strong>, Special Group Interested in Programming Contest (SGIPC), KUET · Feb 2024 – Feb 2025</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <p class="footer__lede">Open to PhD opportunities (Fall 2027) in distributed systems, storage reliability, and ML-for-systems.</p>
+      <div class="footer__links">
+        <a href="mailto:sabnajislam786@gmail.com">sabnajislam786@gmail.com</a>
+        <a href="https://github.com/Sabnaj-42" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sabnaj-akter-a1a571227/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/Sabnaj_Akter_CV.pdf" target="_blank" rel="noopener">CV</a>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Sabnaj Akter · Built by hand with HTML &amp; CSS.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
